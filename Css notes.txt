@@ -1,0 +1,169 @@
+// RGB //
+
+color : rgb(255 , 0 , 0)  {255 is max amount and rgb denotes red , green , blue}
+color : rgb(0 , 255 , 0)
+color : rgb(0 , 0 , 255)
+
+// Hex Color System //
+
+#ff0000 {range - (00 - ff) / ff - Red / 00 - Green / 00 - blue}
+
+//SELECTORS //
+
+Universal Selector       - *{}
+Element Selector         - h1{} 
+Class Selector ("Class") - .class{}
+Id Selector ("Id")       - #myId{}
+
+also we can use :
+
+h1 , h2 , h3 {
+   color : red;
+}
+
+
+// Text-align : //
+{aligns the entire text in different sides sides}
+- center
+- left
+- right
+
+
+// Text-decoration //
+- underline {can add colour (eg : red ) and style (dotted)}
+  eg:
+  text-decoration : red dotted underline;
+- overline 
+- line-through
+- none {removes under line from "a href" tag}
+
+///////////////////////////// FONT ///////////////////////////////////////////
+
+// Font weight //
+determines how bold the font will be 
+range - (100 - 900)
+- bold
+- bolder 
+- light
+- lighter
+
+// Font-family //
+determins the which font will apperar
+ font-family : arial , roboto ;
+if areal wouldnt work roboto will;
+
+// font-size //
+font-size: 10px;
+
+line-height : 
+text-transform : uppercase
+               : lowercase
+               : capitalized  {first letter of each word}
+               : none
+
+text-align: center;
+          : right;
+          : left;
+
+//////////////////////////// BORDER //////////////////////////////////////////
+border-width : x px 
+border-style : 
+border-color : 
+border-radious : x px ; , x %;
+
+////////////////////////// PADDING ///////////////////////////////////////////
+
+padding-left : x % / x px;
+padding-right : x % / x px;
+padding : x % / x px;
+padding-top : x % / x px;
+padding-bottom : x % / x px;
+
+////////////////////////// MARGIN ///////////////////////////////////////////
+
+margin-left:
+margin-right:
+margin-top:
+margin-bottom:
+
+////////////////////////// Background ///////////////////////////////////////////
+
+Background-image : url();
+Background-size : cover;  // covers the img to the background
+                : contain // fit the entire image 
+
+background-repeat : no - repeat;                
+
+////////////////////////// FLEXBOX ///////////////////////////////////////////
+Display : flex ; 
+flex-direction : row-reverse;
+               : row;
+               : column;
+               : column-reverse;
+
+justifiy-content : flex-start ;
+                 : flex-end ; //dosent reverse , just put it at he edge.
+                 : center;
+                 : space between;
+                 : space even;
+
+align-content : center;
+align-items : center;       
+flex-wrap : wrap;  
+
+flex-grow : 
+flex-shrink : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 692px) {
+    .links {
+        display: none;
+    }
+    
+    .menu::after {
+        content: ''; 
+        display: block; 
+        background-image: url('menu.png'); 
+        background-size: cover; 
+        width: 30px; 
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.849);
+        border-radius: 5px;
+    }
+    
+    .menu:hover .links {
+        display: block;
+    }
+    
+    .links {
+        position: absolute;
+        top: 40px; /* Adjust the distance from the top */
+        left: 0;
+        background-color: #fff; /* Background color of the dropdown */
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: add box shadow for styling */
+    }
+    
+    .links a {
+        display: block;
+        color: #333; /* Link color */
+        text-decoration: none;
+        padding: 5px 0;
+    }
+}
